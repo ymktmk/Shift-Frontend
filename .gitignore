@@ -54,3 +54,5 @@ src/app/homepage/pages/**/*.html
 
 # Database
 /data/mysql/
+
+.next
