@@ -5,48 +5,55 @@ import styled from 'styled-components';
 const Login = () => {
     return (
     <Wrapper>
-        <AppImage alt="仮の画像だよ" src="https://1.bp.blogspot.com/-HkohqHrBbJI/VN3vDch8otI/AAAAAAAAris/0NgCSPANHss/s800/hinamatsuri_odairi_ohina.png"/>
-        <LoginContainer>
-            <InputEmailAddress>
+        <SectionLeft></SectionLeft>
+        <SectionRight>
+            <AppImage alt="仮の画像だよ" src="https://1.bp.blogspot.com/-HkohqHrBbJI/VN3vDch8otI/AAAAAAAAris/0NgCSPANHss/s800/hinamatsuri_odairi_ohina.png"/>
+            <LoginContainer>
+                <InputEmailAddress>
 
-            </InputEmailAddress>
-            <InputPassword>
+                </InputEmailAddress>
+                <InputPassword>
 
-            </InputPassword>
-            <LoginButton>
+                </InputPassword>
+                <LoginButton>
 
-            </LoginButton>
-        </LoginContainer>
-        <Border>
+                </LoginButton>
+            </LoginContainer>
+            <Border>
 
-        </Border>
-        <GoogleLoginButton>
+            </Border>
+            <GoogleLoginButton>
 
-        </GoogleLoginButton>
+            </GoogleLoginButton>
+        </SectionRight>
     </Wrapper>
     )
 }
 
 export default Login
 
-const Wrapper = tw.div`
-    h-screen
-    flex
-    flex-col
+const Wrapper = styled.div`
+    display: flex;
+`
+const SectionLeft = styled.div``
+
+const SectionRight = styled.div`
+    display: flex;
+    flex-direction: column;
 `
 
-const AppImage = tw.img``
+const AppImage = styled.img``
 
-const LoginContainer = tw.div`
+const LoginContainer = styled.div`
 
 `
 
-const InputEmailAddress = tw.input``
+const InputEmailAddress = styled.input``
 
-const InputPassword = tw.input``
+const InputPassword = styled.input``
 
-const LoginButton = tw.button``
+const LoginButton = styled.button``
 
-const Border = tw.div``
+const Border = styled.div``
 
-const GoogleLoginButton = tw.button``
+const GoogleLoginButton = styled.button``
