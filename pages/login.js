@@ -1,8 +1,9 @@
 import React from 'react'
 import tw from "tailwind-styled-components"
+import styled from 'styled-components';
 
 const Login = () => {
-  return (
+    return (
     <Wrapper>
         <AppImage alt="仮の画像だよ" src="https://1.bp.blogspot.com/-HkohqHrBbJI/VN3vDch8otI/AAAAAAAAris/0NgCSPANHss/s800/hinamatsuri_odairi_ohina.png"/>
         <LoginContainer>
@@ -23,7 +24,7 @@ const Login = () => {
 
         </GoogleLoginButton>
     </Wrapper>
-  )
+    )
 }
 
 export default Login
